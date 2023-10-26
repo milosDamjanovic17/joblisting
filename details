@@ -1,0 +1,14 @@
+##########
+Project integration and implementation of Spring Boot framework and MongoDB
+
+** Import spring-boot-starter-data-mongodb dependency in pom.xml **
+
+1) Define connection credentials in application.properties
+
+2) Entity/Model classes are annotated with @Document( collection = "Collection-Name")
+
+3) MongoDB comes with default basic out of the box CRUD query operations
+
+4) To create our own Repo, create a class that extends MongoRepository<Entity, Key> and Impl class that implements interface
+
+5) For query searching, go to Atlas or MongoCloud => Collections -> Aggregation -> Add Stage, once we finish staging the indexing -> Export to language
